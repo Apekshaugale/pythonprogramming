@@ -1,0 +1,13 @@
+#prime number number which is divsible by 1 and itself only.
+num=eval(input('Enter the number : '))
+i=1
+b=[]
+while i<=num:
+    if num%i==0:
+        b.append(i)
+    i+=1
+if len(b)==2:
+        print('Prime number .')
+else:
+        print('The number is not a prime')
+        

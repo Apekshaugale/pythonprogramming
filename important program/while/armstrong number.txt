@@ -1,0 +1,30 @@
+#armstrong number
+
+num=eval(input('Enter the number : '))
+i=0
+total=0
+a=str(num)
+power=len(a)
+while i<len(a):
+        total=total+int(a[i])**power
+        i+=1
+    
+if total==num:
+        print('its armstrong')
+else:
+        print('its not a armstrong')
+
+
+num=eval(input('Enter the number : '))
+dum=num
+st=str(num)
+b=len(st)
+out=0
+while num>0:
+    last_digit=num%10
+    out=out+last_digit**b
+    num=num//10#increment
+if out==dum:
+    print('Armstrong')
+else:
+    print('Not armstrong')

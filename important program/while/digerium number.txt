@@ -1,0 +1,15 @@
+#digerium num=135=5^3(index postion=3),3^2(index position of 3=2),1^1(index postion of 1=1)
+num=eval(input('Enter the number : '))
+a=num
+b=len(str(num))
+temp=0
+while num>0:
+    lastdigit=num%10
+    temp=temp+lastdigit**b
+    num=num//10
+    b=b-1
+if temp==a:
+    print('Digerium')
+else:
+    print('Not digerium')
+    

@@ -1,4 +1,4 @@
-'''def check(x,y):
+def check(x,y):
     a=x+y
     b=x-y
     c=x*y
@@ -62,8 +62,7 @@ print(next(q))
 print(next(q))
 
 print()
-'''
-'''
+
 s=[1,2,3,4,5,6]
 def square(x):
     a=[]
@@ -90,7 +89,7 @@ def square(x):
     return a
 print(square([1,2,3,4,5,6]))
 #using generator
-'''
+
 s=[1,2,3,4,5,6]
 def square(x):
     #a=[]
@@ -100,7 +99,7 @@ def square(x):
       yield i**2
 print(list(square([1,2,3,4,5,6])))
 
-'''
+
 a=['walmart','vistara','vstar','blind','thankyou','promax','panthor']
 def odd(x):
     b=[]
@@ -140,6 +139,5 @@ def odd(x):
            yield i
 print(list(odd(['walmart','vistara','vstar','blind','thankyou','promax','panthor'])))
 
-   ''' 
-
+ 
 

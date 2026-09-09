@@ -1,0 +1,23 @@
+  #tuples
+#count()-->vn.count(element)
+ #index(0-->vn.index(substring,si,ei+1)
+            #list
+#append()-->vn.append(element)
+#extend()-->vn.extend(iterable)
+#insert()-->vn.insert(position,value)
+ #pop()-->vn.pop(position)
+ #remove()-->vn.remove(element)
+ #clear()-->vn.clear()
+ #keyword--> del varname
+            #it will delete complete list from memeory location
+#count()-->vn.count(element)
+#index()-->vn.index(subsrting,si,ei+1)
+#reverse()-->vn.reverse()
+#copy()-->new vn=ogiginal vn
+#shallow copy-->new vn=originalvn.copy()
+#deepcopy()--> from copy import deepcopy
+        # newvn=deepcopy(original copy)
+#sort-->vn.sort()
+        # vn.sort(key=none,reverse=False)
+        
+            

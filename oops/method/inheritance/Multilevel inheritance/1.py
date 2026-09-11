@@ -130,16 +130,16 @@ Total fees is 85000
 '''
 #construcor overrding
 class Employee:
-    def  __init__(self,Cname,Tmember,Tpackege):
+    def  __init__(self,Cname,Tmember,Tpackage):
         self.Cname=Cname
         self.Tmember=Tmember
-        self.Tpackege=Tpackege
+        self.Tpackage=Tpackage
     def data(self):
         print(f'Company name is {self.Cname}\n'
               f'Total memeber is {self.Tmember}\n'
-              f'Total packege is {Tpackege}')
+              f'Total packege is {self.Tpackage}')
 class Startemployee(Employee):
-    def  __init__(self,sal,yoe,role):
+    def  __init__(self,Cname, Tmember, Tpackage,sal,yop,role):
         self.sal=sal
         self.yop=yop
         self.role=role
@@ -149,7 +149,7 @@ class Startemployee(Employee):
               f'YOP  is {self.yop}\n'
               f'Role  is {self.role}')
 class Rules(Startemployee):
-    def __init__(self,intime,outtime,rolename):
+    def __init__(self,Cname, Tmember, Tpackage,sal,yop,role,intime,outtime,rolename):
         self.intime=intime
         self.outtime=outtime
         self.rolename=rolename
@@ -160,7 +160,7 @@ class Rules(Startemployee):
               f'Intime  is {self.rolename}')
        
 r=Rules('Capgemini',60,'7lpa',45000,2026,'Anyalist',2,5,'BA')
-r.Data()
+r.data()
 r.Info()
 r.Check()
 

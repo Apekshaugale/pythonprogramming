@@ -11,33 +11,7 @@ c=Child()
 c.Bike()
 c.Property()
 c.Agrii()
-#--------------------Method overriding   we can achieve using classname and super function----------------------------------------
-class Dad:
-    def Money(self):
-        print('1cr')
-class Child1(Dad):
-    def Money(self):
-        print('50lakh')
-class Child2(Child1):
-    def Money(self):
-        print('25lakh')
-c=Child2()
-c.Money()#25lakh
 
-
-class Dad:
-    def Money(self):
-        print('1cr')
-class Child1(Dad):
-    def Money(self):
-        super().Money()
-        print('50lakh')
-class Child2(Child1):
-    def Money(self):
-        super().Money()
-        print('25lakh')
-c=Child2()
-c.Money()#25lakh
 
 #-------using classname---
 class Dad:
@@ -58,74 +32,6 @@ c.Money()
 #25lakh
 
 
-#------constructor overriding-----------------
-class Teacher:
-    def __init__(self):
-        print('First Class')
-class Std1(Teacher):
-    def __init__(self):
-        super().__init__()
-        print('Second class')
-class Std2(Std1):
-    def __init__(self):
-        super().__init__()
-        print('Third class')
-s=Std2()
-print(dir(s))
-
-
-class Teacher:
-    def __init__(self):
-        print('First Class')
-class Std1(Teacher):
-    def __init__(self):
-        super().__init__()
-        print('Second class')
-class Std2(Std1):
-    def __init__(self):
-        super().__init__()
-        print('Third class')
-s=Std2()
-o/p:
-First Class
-Second class
-Third class
-#-------------by passing parameters-----------------------------
-class Institude:
-    def Information(self,In,Stack,Fee):
-        self.In=In
-        self.Stack=Stack
-        self.Fee=Fee
-        print(f'Institude name is {self.In}\n'
-              f'Student Course name is {self.Stack}\n'
-              f'Total fees is {self.Fee}')
-class Student(Institude):
-    def  Subject(self,Sn,Tc,Tp):
-        self.Sn=Sn
-        self.Tc=Tc
-        self.Tp=Tp
-        print(f'Subject name is {self.Sn}\n'
-              f'Total class name is {self.Tc}\n'
-              f'Total time  is {self.Tp}')
-class Result(Student):
-    def Finalstage(self,TM,Grade):
-        self.TM=TM
-        self.Grade=Grade
-        print(f'Total marks is {self.TM}\n'
-              f'Grade is {self.Grade}'   ) 
-r=Result()
-r.Finalstage(57,'A+')
-r.Subject('Shree',60,'6month')        
-r.Information("Qspider",'Datascience',85000)
-o/p:
-Total marks is 57
-Grade is A+
-Subject name is Shree
-Total class name is 60
-Total time  is 6month
-Institude name is Qspider
-Student Course name is Datascience
-Total fees is 85000
 
 '''
 #construcor overrding
@@ -137,7 +43,7 @@ class Employee:
     def data(self):
         print(f'Company name is {self.Cname}\n'
               f'Total memeber is {self.Tmember}\n'
-              f'Total packege is {self.Tpackage}')
+              f'Total package is {self.Tpackage}')
 class Startemployee(Employee):
     def  __init__(self,Cname, Tmember, Tpackage,sal,yop,role):
         self.sal=sal
@@ -163,5 +69,17 @@ r=Rules('Capgemini',60,'7lpa',45000,2026,'Anyalist',2,5,'BA')
 r.data()
 r.Info()
 r.Check()
+
+o/p:
+Company name is Capgemini
+Total memeber is 60
+Total packege is 7lpa
+salary is 45000
+YOP  is 2026
+Role  is Anyalist
+Intime  is 2
+Outtime is 5
+Intime  is BA
+
 
     

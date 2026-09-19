@@ -229,6 +229,7 @@ class bank:
 
 b=bank()
 b.bal=1000
+bank.bal=1000
 print(b.bal)#0.0
 b.deposite(6000)
 b.withdraw(200)

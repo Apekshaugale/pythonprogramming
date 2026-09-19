@@ -251,3 +251,7 @@ y.Data()
 y.Add_interset()
 y.Age_benfits()
 '''
+nums = [2,7,11,15]
+target = 9
+for i in enumerate(nums,0):
+    print(i) 

@@ -86,7 +86,7 @@ class Son(Mom,Baba):
 b=Baba()
 s=Son()
 s.son()
-'''
+
 class Class:
     def __init__(self,name,age):
         self.name=name
@@ -113,4 +113,10 @@ class Teacher(Student):
         print(self.c)
 c=Teacher("Rohit",34,5,89065,"HTML")
 
-
+'''
+class School:
+    name="Priya"
+    @classmethod
+    def demo(cls):
+        print(cls.name)
+School.demo()

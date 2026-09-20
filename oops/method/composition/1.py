@@ -81,4 +81,4 @@ class Employee:
         print(eid)
         print(eno)
 e=Employee()
-e.show1()
+e.show1('E01',43)

@@ -372,7 +372,7 @@ s.teach('Hello',56,'Rohan')
 s.teacher1(20)
 
 
-'''
+
 class Math:
     @staticmethod
     def add():
@@ -388,7 +388,107 @@ class Math:
 #Math.sub(5,4)
 m=Math()
 m.add()
-Math.a=40
+Math.a=40#modification is not occured
 m.add()
 #m.sub(5,6)
+
+class Student:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def display(self):
+        print(self.name,self.age)
+s=Student('Prince',23)
+s.display()
+
+
+class Animal:
+    def __init__(self):
+        print('Welcome to poem')
+    def sound(self):
+        print('Dog is barking')
+a=Animal()
+a.sound()
+
+
+
+
+class Student:
+    def __init__(self):
+        self.name = "Prabhu"
+
+s1 = Student()
+print(s1.name)
+
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Anu", 20)
+print(s1.name, s1.age)
+
+
+class Mobile:
+    def __init__(self, brand, price):
+        self.brand = brand
+        self.price = price
+        print(self.brand)
+        print(self.price)
+m=Mobile("Samsung", 20000)
+o/p:
+Samsung 20000
+
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+        Student.greet(self)
+    def greet(self):
+        print("Hello", self.name)
+s1 = Student("Rahul")
+#s1.greet()
+
+o/p:
+Hello Rahul
+
+
+class Bank:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+    def show(self):
+        print(self.name, "has", self.balance)
+b1 = Bank("Ravi", 5000)
+b1.show()
+o/p:Ravi has 5000
+
+
+class Student:
+    college = "ABC College"   # class variable
+    def __init__(self, name):
+        self.name = name      # instance variable
+s1 = Student("Ram")
+s2 = Student("Anu")
+print(s1.name, s1.college)
+print(s2.name, s2.college)
+
+o/p:
+Ram ABC College
+Anu ABC College
+
+
+#method overloading
+class Sample:
+    def  add(self,a):
+        print('Addition')
+        print(a)
+    def add(self,a=0,b=0):
+        print('Addition 2')
+        print(a+b)
+s=Sample()
+s.add(5)
+
+'''
 

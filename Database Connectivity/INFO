@@ -1,0 +1,37 @@
+import mysql.connector
+#to login mysql workbemch
+
+#used sql workbench to create database and table in mysql to make connection with mysql database
+conn=mysql.connector.connect(host="localhost",
+                             user="root", 
+                             password="Apeksha@2401")#for connecting to mysql   
+
+
+#one variable is created to give address to the database
+cur=conn.cursor()  #for giving address to the database we use cursor() method of mysql.connector
+
+cur.execute("Create  database if not exists database_name")#to create database in mysql
+
+cur.execute("use database_name")#to use the database in mysql
+
+#to create table in mysql
+cur.execute("""Create table if not exists tablename (name varchar(20),age int,address varchar(20))""")
+
+sql_queries = """ insert into tablename values(%s,%s,%s)"""#to insert data in mysql table .%s are the dummy variables 
+#values which will be replaced by the actual values in the data list
+
+#data to be inserted in mysql table we use tuple datatype to give data security
+data=[("Navenn", 26, "Banglore"), ("Nita", 25, "India"), ("Priti", 23, "Pune")]
+
+cur.executemany(sql_queries,data)#executemany() method is used to insert multiple data in mysql table
+
+conn.commit()#commit() method is used to save the changes in mysql database 
+
+cur.execute("""select *from tablename""")#to select all data from mysql table
+
+result=cur.fetchall()#fetchall() method is used to fetch all data from mysql table
+
+for res in result:
+    print(res)#to print the data fetched from mysql table   
+
+conn.close()#close() method is used to close the connection with mysql database 

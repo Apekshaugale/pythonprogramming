@@ -77,28 +77,54 @@
 # 5-->WAP TO GET THE FOLLOWING O/P
 # I/P='PYTHON IS EASY'
 # O/P={'PYTHON':'python', 'IS':'is', 'EASY':'easy'}
-def string(n):
-    return (n,n.lower())
-a='PYTHON IS EASY'
-res=map(string,a.split())
-print(dict(res))
+# def string(n):
+#     return (n,n.lower())
+# a='PYTHON IS EASY'
+# res=map(string,a.split())
+# print(dict(res))
 
 # 6-->wap to return if the key is individual returns its value else return its type
 # d={10:"ten","hai":"value",(1,2,3):"colln",1.2:"decimal"}
 
+# def indetity(n):
+#     if type(n)==int:
+#         return (n,"ten")
+#     elif type(n)==str:
+#         return (n,"value")
+#     elif type(n)==tuple:
+#         return (n,"colln")
+#     elif type(n)==float:
+#         return (n,"decimal")
+# a=[10,"hai",(1,2,3),1.2]
+# res=map(indetity,a)
+# print(dict(res))
+
 # 7-->wap to create a list of 1st characters from each name
 # names=["manu","lohit","jivago","wank","yaseen"]
-
+# def man(n):
+#     return n[0]
+# res=map(man,names)
+# print(list(res))
 
 # 8-->wap to return list of name and length pair
 # names1=["laptop","mouse","board","house","week"]
-
+# def names(n):
+#     return (n,len(n))
+# res=map(names,names1)
+# print(list(res))
 
 # 9-->wap to print sum of indices from both list
+# def sums(a,b):
+#     return a+b
 # l1=[2,3,4,5,6]
 # l2=[3,4,5,8,9]
-
+# res=map(sums,l1,l2)
+# print(list(res))
 
 # 10-->wap to make a pair of names and age
-# names=["a","b","c","d"]
-# age=[20,35,21,56]
+def two(a,b):
+    return (a,b)
+names=["a","b","c","d"]
+age=[20,35,21,56]
+c=map(two,names,age)
+print(dict(c))

@@ -202,6 +202,15 @@
 #         print(n)
 # even(10)
 
+# def even(n):
+#     if n>10:
+#         return
+#     if n%2==0:
+
+#         print(n)
+#     even(n+1)
+# even(1)
+
 #Print numbers from 1 to 10 using recursion.
 # def num(n):
 #     if n==0:
@@ -294,3 +303,16 @@
 #         return 0
 #     return (n%10) + sum_digits(n//10)
 # print(sum_digits(12345))
+
+
+even=[]
+odd=[]
+def demo(n):
+    for i in n:
+        if i%2==0:
+            even.append(i)
+        else:
+            odd.append(i)
+print(demo([1,2,3,4,5,6,7,8,9,10]))
+print("Even numbers:", even)
+print("Odd numbers:", odd)

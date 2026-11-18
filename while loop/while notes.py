@@ -1,6 +1,6 @@
 #while loop:
 '''
-Aset of instruction/block of code while willl execut repeatedly  untilll the condition is satisfied
+A set of instruction/block of code while will execut repeatedly  untill the condition is satisfied
 
 Syntax:
      initilization
@@ -73,5 +73,10 @@ while i<=n:
     mul=mul*i
     i=i+1
 print(mul)
-    
+
+i=0
+a=0
+while i<=5:
+     a+=i
+i++
 

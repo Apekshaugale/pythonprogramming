@@ -61,8 +61,8 @@
 
 # 4.waf to build a list with only even length strings using filter
 
-#k=["apple","google","walmart","fb","insta","act","zomato"]
-
+k=["apple","google","walmart","fb","insta","act","zomato"]
+res=
 
 # 5.waf to return only positive values in the list using filter
 
